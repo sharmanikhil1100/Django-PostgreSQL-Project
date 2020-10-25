@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Book, Author
 from .serializers import AuthorSerializer, BookSerializer
-import json
 from django.core.serializers import serialize
+import json
 
 def index(request):
     return HttpResponse("School Library.")    

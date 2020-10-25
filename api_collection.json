@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "c28759fa-13df-4ac6-b691-b6307177de2e",
+		"name": "Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Author insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"author_id\" : \"author2\",\n    \"name\" : \"durjoy dutta\",\n    \"phone\" : \"1234568091\",\n    \"address\" : \"iim b\",\n    \"email\" : \"durjoy@bhagat.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/library/author",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"book_id\": \"b1\",\n    \"name\": \"2 states\",\n    \"author_id\":\"author3\",\n    \"published_date\":\"2019-02-01\",\n    \"rating\":5,\n    \"price\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/library/book",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"book_id\": \"b4\",\n    \"name\": \"Jungle Book\",\n    \"author_id\":\"author2\",\n    \"published_date\":\"2017-02-01\",\n    \"rating\":5,\n    \"price\": 100\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/library/book",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/library/book",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Author Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/library/author",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Author PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"author_id\" : \"author2\",\n    \"name\" : \"durjoy dutta\",\n    \"phone\" : \"1234568091\",\n    \"address\" : \"iim c\",\n    \"email\" : \"durjoy@bhagat.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/library/author",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"library",
+						"author"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
