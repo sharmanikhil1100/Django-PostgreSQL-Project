@@ -5,18 +5,18 @@ Following is an application in Django, having REST APIs with PostgreSQL Database
 ### Database Schemas
 
 - Author model Schema :
-  author_id (text, primary key)
-  name (text)
-  phone (text)
-  address (text)
+  author_id (text, primary key)\
+  name (text)\
+  phone (text)\
+  address (text)\
   email (Email)
 
 - Book model Schema :
-  book_id (text, primary key)
-  name (text)
-  author_id (text, foreign key)
-  published_date (Date)
-  rating (Int)
+  book_id (text, primary key)\
+  name (text)\
+  author_id (text, foreign key)\
+  published_date (Date)\
+  rating (Int)\
   price (Int)
 
 ### APIs
